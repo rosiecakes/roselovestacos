@@ -119,7 +119,7 @@ var barfive = new ProgressBar.Circle(barcontainerfive, {
     autoStyleContainer: false
   },
   from: { color: '#607D8B', width: 1 },
-  to: { color: '#333', width: 7 },
+  to: { color: '#333', width: 4 },
   // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
@@ -129,10 +129,10 @@ var barfive = new ProgressBar.Circle(barcontainerfive, {
     if (value === 0) {
       circle.setText('');
     } else {
-      circle.setText('DevOps');
+      circle.setText('Ops');
     }
   }
 });
 barfive.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
 barfive.text.style.fontSize = '2rem';
-barfive.animate(0.45);
+barfive.animate(1.0);
