@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $( "#rmotr" ).tooltip({
-  content: "Awesome title!"
+  $('.tooltip').tooltipster({
+    theme: 'tooltipster-punk'
   });
 });
 

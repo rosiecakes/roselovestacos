@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/tooltipster/dist/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   </head>
   <body>
@@ -43,7 +45,7 @@
               </header>
               <p>Built with Python and Django, styled with Materialize CSS and jQuery. I created this to fill a need at work to track onboarding waves of a new delivery center. I also customized the backend for management use so it's easy for them to maintain.</p>
               <ul class="actions">
-                <li><a href="http://rosiecakes.pythonanywhere.com" class="button">More</a></li>
+                <li><a href="http://rosiecakes.pythonanywhere.com" class="button">Site</a></li>
                 <li><a href="https://github.com/rosiecakes/studious-sniffle" class="button">Code</a></li>
               </ul>
             </article>
@@ -54,9 +56,9 @@
               </header>
               <p>Part time I am a course developer and teaching assistant. We connect with students remotely during 4 week courses using C9, Google Hangouts and a custom tool we have developed with Django using Github and Travis for CI/CD.</p>
               <ul class="actions">
-                <li><a href="https://rmotr.com/" class="button">Info</a></li>
-                <li><a href="https://github.com/rmotr-curriculum/itp-class" class="button" id="rmotr">Code</a></li>
-                <li><a href="http://bit.ly/2cU9KXc" class="button">Tool</a></li>
+                <li><a href="https://rmotr.com/" class="button tooltip" title="Our main RMOTR website">Info</a></li>
+                <li><a href="https://github.com/rmotr-curriculum/itp-class" class="button tooltip" title="Our latest class 'Intro to Python'">Code</a></li>
+                <li><a href="http://bit.ly/2cU9KXc" class="button tooltip" title="Custom LEARN tool built on Django">Tool</a></li>
               </ul>
             </article>
             <article class="item">
@@ -64,10 +66,11 @@
                 <a href="https://rmotr.com/"><img src="images/pic03.jpg" alt="" /></a>
                 <h2>CMS</h2>
               </header>
-              <p>Implemented a custom installation of a content management system using an open source solution running PHP 5.6 with Apache. App currently lives behind a firewall so you won't be able to check it out :( but it involved configuration on RHEL7, CI/CD, caching and custom DNS. Next to do is implementing custom deploy hooks with our internal instance of Gitlab so contributors can easily edit and track issues and features.</p>
+              <p>Implemented a custom installation of a content management system using an open source solution running PHP 5.6 with Apache. App currently lives behind a firewall so you won't be able to check it out :( but it involved configuration on RHEL7, CI/CD, caching and custom DNS.</p>
               <ul class="actions">
-                <li><a href="https://github.com/getgrav/grav-skeleton-rtfm-site" class="button">OSS</a></li>
+                <li><a href="https://github.com/getgrav/grav-skeleton-rtfm-site" class="button tooltip" title="Original open source code">OSS</a></li>
               </ul>
+              <p>Next to do is implementing custom deploy hooks with our internal instance of Gitlab so contributors can easily edit and track issues and features.</p>
             </article>
             <article class="item">
               <header>
@@ -87,12 +90,12 @@
             <p>I am a junior developer looking to advance, but am an experienced engineer. I know how to solve problems and work autonomously.<br />I can pick things up quickly and simply need the opportunity to do so.</p>
             <br />
               <ul class="icons">
-                <li><a href="https://docs.google.com/document/d/1MVU6f6QbNYkzCtzjr1hNKt_uZZUQiJ0iLuCxxG5wq2Y/edit?usp=sharing" class="icon fa-file-text-o fa-lg"><span class="label">Resume</span></a></li>
-                <li><a href="https://twitter.com/rose_shimada" class="icon fa-twitter fa-lg"><span class="label">Twitter</span></a></li>
-                <li><a href="https://www.instagram.com/rose_shimada/" class="icon fa-instagram fa-lg"><span class="label">Instagram</span></a></li>
-                <li><a href="https://www.linkedin.com/in/rose-shimada-911636124" class="icon fa-linkedin fa-lg"><span class="label">LinkedIn</span></a></li>
-                <li><a href="mailto:rosieshimada@gmail.com" class="icon fa-envelope fa-lg"><span class="label">Email</span></a></li>
-                <li><a href="https://github.com/rosiecakes" class="icon fa-github fa-lg"><span class="label">Github</span></a></li>
+                <li><a href="https://docs.google.com/document/d/1MVU6f6QbNYkzCtzjr1hNKt_uZZUQiJ0iLuCxxG5wq2Y/edit?usp=sharing" class="icon fa-file-text-o fa-lg tooltip" title="Download my resume"><span class="label">Resume</span></a></li>
+                <li><a href="https://twitter.com/rose_shimada" class="icon fa-twitter fa-lg tooltip" title="Twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.instagram.com/rose_shimada/" class="icon fa-instagram fa-lg tooltip" title="My Instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://www.linkedin.com/in/rose-shimada-911636124" class="icon fa-linkedin fa-lg tooltip" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
+                <li><a href="mailto:rosieshimada@gmail.com" class="icon fa-envelope fa-lg tooltip" title="Email me"><span class="label">Email</span></a></li>
+                <li><a href="https://github.com/rosiecakes" class="icon fa-github fa-lg tooltip" title="Github"><span class="label">Github</span></a></li>
               </ul>
           </section>
           <footer id="footer">
@@ -104,7 +107,7 @@
       <script src="assets/js/main.js"></script>
       <script src="assets/js/progressbar.js"></script>
       <script src="assets/js/bars.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script type="text/javascript" src="node_modules/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
