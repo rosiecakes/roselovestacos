@@ -6,6 +6,10 @@ label {
   width: 5em;
 }
 
+.fa-lg{
+  font-size:1.5em !important;
+}
+  
 .grid-container{
   width: 100%;
   display: block;
