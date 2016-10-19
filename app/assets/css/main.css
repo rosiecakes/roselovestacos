@@ -1,6 +1,10 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
 
+label {
+  display: inline-block;
+  width: 5em;
+}
 
 .grid-container{
   width: 100%;

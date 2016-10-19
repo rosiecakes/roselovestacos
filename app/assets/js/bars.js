@@ -1,3 +1,9 @@
+$(document).ready(function() {
+  $( "#rmotr" ).tooltip({
+  content: "Awesome title!"
+  });
+});
+
 var barone = new ProgressBar.Circle(barcontainerone, {
   color: '#aaa',
   strokeWidth: 5,
@@ -63,7 +69,7 @@ var barthree = new ProgressBar.Circle(barcontainerthree, {
     autoStyleContainer: false
   },
   from: { color: '#aaa', width: 1 },
-  to: { color: '#FF9800', width: 9 },
+  to: { color: '#FF9800', width: 10 },
   // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
@@ -73,13 +79,13 @@ var barthree = new ProgressBar.Circle(barcontainerthree, {
     if (value === 0) {
       circle.setText('');
     } else {
-      circle.setText('WebDev');
+      circle.setText('JQuery');
     }
   }
 });
 barthree.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
 barthree.text.style.fontSize = '2rem';
-barthree.animate(0.44);
+barthree.animate(0.36);
 
 
 var barfour = new ProgressBar.Circle(barcontainerfour, {
@@ -90,8 +96,8 @@ var barfour = new ProgressBar.Circle(barcontainerfour, {
   text: {
     autoStyleContainer: false
   },
-  from: { color: '#aaa', width: 1 },
-  to: { color: '#9C27B0', width: 10 },
+  from: { color: '#aaa', width: 2 },
+  to: { color: '#9C27B0', width: 11 },
   // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
@@ -101,13 +107,13 @@ var barfour = new ProgressBar.Circle(barcontainerfour, {
     if (value === 0) {
       circle.setText('');
     } else {
-      circle.setText('JS');
+      circle.setText('Data Science');
     }
   }
 });
 barfour.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
 barfour.text.style.fontSize = '2rem';
-barfour.animate(0.36);
+barfour.animate(0.22);
 
 
 var barfive = new ProgressBar.Circle(barcontainerfive, {
