@@ -9,7 +9,7 @@ label {
 .fa-lg{
   font-size:1.5em !important;
 }
-  
+
 .grid-container{
   width: 100%;
   display: block;
@@ -1517,7 +1517,7 @@ text-align: center;
 /* CTA */
 
 #cta {
-padding: 2em 0 0.1em 0;
+padding: 2em 4em 0.1em 4em;
 text-align: center;
 }
 
