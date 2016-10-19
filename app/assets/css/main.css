@@ -7,7 +7,7 @@ label {
 }
 
 .fa-lg{
-  font-size:1.5em !important;
+  font-size:2em !important;
 }
 
 .grid-container{
@@ -1519,6 +1519,8 @@ text-align: center;
 #cta {
 padding: 2em 4em 0.1em 4em;
 text-align: center;
+background-color: #ffffff;
+border-radius: 4px;
 }
 
 @media screen and (max-width: 736px) {
@@ -1555,9 +1557,9 @@ text-align: center;
 #footer:before {
   content: '';
   display: inline-block;
-  width: 6em;
-  height: 2px;
-  background-color: #666666;
+  width: 10em;
+  height: 4px;
+  background-color: #ffffff;
   margin-bottom: 4em;
 }
 
